@@ -1,0 +1,35 @@
+{
+  "name": "sao",
+  "version": "1.0.0",
+  "description": "Single sign-on",
+  "main": "./app/index.js",
+  "dependencies": {
+    "art-template": "^4.10.1",
+    "koa": "^2.2.0",
+    "koa-art-template": "^1.1.0",
+    "koa-bodyparser": "^3.2.0",
+    "koa-logger": "^3.0.0",
+    "koa-onerror": "^3.1.0",
+    "koa-router": "^7.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node ./app/index.js",
+    "dev": "supervisor ./app/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fku233/Sao.git"
+  },
+  "keywords": [
+    "sso",
+    "koa"
+  ],
+  "author": "rivaille",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fku233/Sao/issues"
+  },
+  "homepage": "https://github.com/fku233/Sao#readme"
+}
