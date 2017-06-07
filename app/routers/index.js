@@ -10,6 +10,7 @@ const user = require('../controllers/user')
 router.get('/', (ctx, next)=>{
     ctx.body = 'Hello World!';
 })
-router.get('/login', user.getLogin)
+router.get('/login', user.getSingIn())
+router.get('/join', user.getSingUp())
 
 module.exports = router

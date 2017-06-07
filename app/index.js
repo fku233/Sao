@@ -8,7 +8,8 @@ const logger = require('koa-logger')
 const path = require('path');
 
 const router = require('./routers/index')
-const config = require('./../config')
+// const models = require('./config/mongo')
+const config = require('./config')
 
 const app = new Koa()
 
@@ -33,5 +34,6 @@ app.use(async function (ctx, next) {
 
 onError(app)
 
-app.listen(config.port)
-console.log(`Koa started on port: ${config.port}`)
+app.listen(config.port, ()=>{
+    console.log(`Koa2 started on port: ${config.port}`)
+})
