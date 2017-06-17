@@ -1,0 +1,113 @@
+html{
+    font-size: 14px;
+}
+body, h1, h2, h3, h4, form {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+header {
+    height: 70px;
+    background: #F8F8F8;
+}
+
+header .logo{
+    font-size: 30px;
+    line-height: 70px;
+    padding-left: 30px;
+    color: #007fff;
+}
+
+.center{
+    text-align: center;
+}
+
+.right{
+    float: right;
+}
+
+.sign-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.sign-box .auth-form {
+    position: relative;
+    padding: 30px;
+    width: 400px;
+    max-width: 100%;
+    font-size: 1.167rem;
+    background-color: #fff;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.sign-box .sign-title {
+    text-align: center;
+    margin: 15px;
+}
+
+.input-group {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.input-group .input-box {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.input-group .input-box input {
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #e9e9e9;
+    border-radius: 2px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.input-group input:focus {
+    border: 1px solid #007fff;
+}
+
+.btn{
+    width: 100%;
+    height: 35px;
+    border: none;
+    font-size: 15px;
+    color: #fff;
+    background-color: #007fff;
+    border-radius: 2px;
+    outline: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.prompt a{
+    color: #007fff;
+}
+.prompt{
+    font-size: 14px;
+}
+.oauth-box{
+    font-size: 13px;
+    color: #8b9196;
+    margin-top: 20px;
+}
+.oauth-box img{
+    margin-left: 5px;
+    height: 24px;
+    vertical-align: bottom;
+    cursor: pointer;
+}

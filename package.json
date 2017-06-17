@@ -5,6 +5,7 @@
   "main": "./app/index.js",
   "dependencies": {
     "art-template": "^4.10.1",
+    "bluebird": "^3.5.0",
     "koa": "^2.2.0",
     "koa-art-template": "^1.1.0",
     "koa-bodyparser": "^3.2.0",
@@ -15,7 +16,11 @@
     "koa-onerror": "^3.1.0",
     "koa-router": "^7.2.0",
     "koa-static": "^3.0.0",
-    "mongoose": "^4.10.5"
+    "koa-validate": "^1.0.7",
+    "mongoose": "^4.10.5",
+    "nodemailer": "^4.0.1",
+    "utility": "^1.12.0",
+    "uuid": "^3.1.0"
   },
   "devDependencies": {},
   "scripts": {

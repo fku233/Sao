@@ -1,10 +1,12 @@
 'use strict'
 
 const mongoose = require('mongoose')
-const config = require('../env')
+const promise = require('bluebird')
+const env = require('../env')
 
-mongoose.connect(`${config.mongodb.host}:${config.mongodb.port}/${config.mongodb.database}`)
-
+mongoose.connect(`${env.mongodb.host}:${env.mongodb.port}/${env.mongodb.database}`)
+// mongoose 内置的 promise 库已经移除啦，这里用 bluebird
+mongoose.Promise = promise
 let db = mongoose.connection
 
 db.on('error', (err) => {
@@ -17,5 +19,6 @@ db.once('open', () => {
 
 // models
 const user = require('../models/user')
+const activation = require('../models/activation')
 
-module.exports = {user}
+module.exports = {user,activation}
